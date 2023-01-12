@@ -95,6 +95,8 @@ h1 {
     }  
 }
 
+/* Media queries -- For big screen sizes bigger than 1440px width */
+
 @media screen and (min-width: 1440px) {
     h1 {
         font-size: 4rem;
@@ -118,4 +120,5 @@ h1 {
 
     .door {
         padding: 2%;
+}
 }
