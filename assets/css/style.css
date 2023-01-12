@@ -20,6 +20,7 @@ h1 {
 .logo {
     color: #B8390E;
     font-size: 2rem;
+    margin-bottom: 3%;
 }
 
 .logo:hover {
@@ -30,7 +31,8 @@ h1 {
 /*Gaming zone*/
 #rooms-images img {
     width: 100%;
-    display: none;      
+    /*display: none;*/ 
+
 }
 
 #questions {
@@ -42,15 +44,13 @@ h1 {
 
 .door > i {
     font-size: 2rem;
-
 }
 
 .door {
     padding: 3%;    
     margin: 1.5%; 
     border-color: #B8390E;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
 
 .door > i:hover  {    
@@ -62,7 +62,7 @@ h1 {
 }
 
 .door-yellow > i {
-    color: rgb(245, 241, 6);
+    color: rgba(248, 152, 9, 0.877);
 }
 
 .door-green > i {
@@ -73,4 +73,49 @@ h1 {
     color: red;
 }
 
+/* Media queries -- For medium screen sizes between 700px and 1024px width */
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .logo {
+        font-size: 2.7rem;
+    }
+
+    .logo:hover {
+
+        font-size: 3.7rem;
+    }
+
+    #rooms-images {
+        margin: auto 15%;
+    }  
+}
+
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .logo {
+        font-size: 4rem;      
+    }
+    
+    .logo:hover {
+        font-size: 5rem;
+    }
+
+    #rooms-images {
+        margin: auto 25%;
+    }  
+
+    .door > i {
+        font-size: 3rem;
+    }
+
+    .door {
+        padding: 2%;
+}
