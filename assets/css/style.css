@@ -18,10 +18,16 @@ h1 {
 /*Logo in header*/
 
 .logo {
-    color: #B8390E
+    color: #B8390E;
+    font-size: 2rem;
 }
 
+.logo:hover {
 
+    font-size: 3rem;
+}
+
+/*Gaming zone*/
 #rooms-images img {
     width: 100%;
     display: none;      
@@ -31,6 +37,8 @@ h1 {
     font-size: 1.5rem; 
     font-family: Roboto, sans-serif;  
 }
+
+/*style for buttons*/
 
 .door > i {
     font-size: 2rem;
