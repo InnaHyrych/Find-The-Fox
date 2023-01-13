@@ -31,7 +31,7 @@ h1 {
 /*Gaming zone*/
 #rooms-images img {
     width: 100%;
-    /*display: none;*/ 
+    display: none;
 
 }
 
@@ -57,19 +57,19 @@ h1 {
     transform: scale(1.2);    
 }
 
-.door-blue > i {
+#blue {
     color: rgb(2, 165, 230);    
 }
 
-.door-yellow > i {
+#yellow {
     color: rgba(248, 152, 9, 0.877);
 }
 
-.door-green > i {
+#green {
     color: rgb(5, 248, 57);
 }
 
-.door-red > i {
+#red{
     color: red;
 }
 
@@ -97,7 +97,7 @@ h1 {
 
 /* Media queries -- For big screen sizes bigger than 1440px width */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025) {
     h1 {
         font-size: 4rem;
     }
