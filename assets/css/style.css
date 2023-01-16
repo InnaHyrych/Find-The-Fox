@@ -1,4 +1,5 @@
 /*Main style*/
+
 body {
         background-color: white;
         font-family: "Arvo", sans-serif;
@@ -6,12 +7,12 @@ body {
         text-align: center;
     }
 
-/* Media queries -- For small screen sizes below 600px width */    
+/* Media queries -- For small screen sizes 320px - 480px width */    
 
 /*Header*/    
 
 h1 {
-    font-size: 2rem;
+    font-size: 200%;
     color: #3B0918;
 }
 
@@ -19,16 +20,16 @@ h1 {
 
 .logo {
     color: #B8390E;
-    font-size: 2rem;
-    margin-bottom: 3%;
+    font-size: 300%;
+    margin-bottom: 5%;
 }
 
 .logo:hover {
-
-    font-size: 3rem;
+    transform: scale(1.2);
 }
 
 /*Gaming zone*/
+
  img {
     width: 100%;
     display: none;        
@@ -46,7 +47,7 @@ h1 {
 }
 
 #blueanswer, #redanswer, #yellowanswer, #greenanswer {
-    padding: 3%;    
+    padding: 4%;    
     margin: 1.5%; 
     border-color: #B8390E;
     border-radius: 50%;  
@@ -72,61 +73,80 @@ h1 {
     color: red;
 }
 
+/*Button that appears when game is finish*/
+
 #finish {
     display: none;
     color:#3B0918;
     margin: 5%;
     float: right;
-
-
+    position: relative;
+    border-color: #f36c3f;
+    border-bottom: 3px solid #B8390E;
+    border-right: 3px solid #B8390E;
+    border-radius: 0 10% 10% 10%;
+    background: #f8beab;    
 }
 
-/* Media queries -- For medium screen sizes between 700px and 1024px width */
+#finish:hover {
+    transform: scale(1.2);
+}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* Media queries -- For screen sizes 768px - 1200px width */
 
-    h1 {
-        font-size: 2.7rem;
-    }
-
-    .logo {
-        font-size: 2.7rem;
-    }
-
-    .logo:hover {
-
-        font-size: 3.7rem;
-    }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
 
     #rooms-images {
-        margin: auto 15%;
+        width: 60%;
+        margin: auto 20%;
     }  
-}
 
-/* Media queries -- For big screen sizes bigger than 1440px width */
+    #questions {
+        width: 60%;
+        margin: 5% 20%;
+    }
 
-@media screen and (min-width: 1025) {
-    h1 {
+    #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
         font-size: 4rem;
     }
 
-    .logo {
-        font-size: 4rem;      
+    #blueanswer, #redanswer, #yellowanswer, #greenanswer {
+        margin: 1%;
+        padding: 3%;
     }
-    
-    .logo:hover {
-        font-size: 5rem;
+    #finish {
+        width: 5rem;
+        height: 2rem;
+        margin-right: 20%;
     }
+}
 
+/* Media queries -- For screen sizes bigger than 1200px width */
+
+@media screen and (min-width: 1200px) {
+    
     #rooms-images {
-        margin: auto 25%;
+        width: 60%;
+        margin: auto 20%;
     }  
+
+    #questions {
+        width: 50%;
+        margin: 5% 25%;
+    }
 
     #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
         font-size: 3rem;
     }
 
     #blueanswer, #redanswer, #yellowanswer, #greenanswer {
-        padding: 2%;
-}
-}
+        margin: 1%;
+        padding: 3%;
+    }
+    
+    #finish {
+    width: 10rem;
+    height: 3rem;
+    margin-right: 20%;          
+    }
+} 

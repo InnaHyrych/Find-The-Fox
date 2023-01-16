@@ -3,7 +3,7 @@ let questionsText = document.getElementById('questions');
 document.addEventListener("DOMContentLoaded", function() {
     let House = document.getElementById('house');
     House.style.display = 'block';
-    questionsText.textContent = "Hey! Welcome to our little house)) The Fox hid somewhere in it. Can you find her? ... P.S. Dont go through the blue door!"; 
+    questionsText.textContent = "Hey! Welcome to our little house)) The Fox hid somewhere in it. Can you find her? ... P.S. Don't go through the blue door!"; 
 })
 
 /*----------Create Array for buttons*/
