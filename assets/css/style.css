@@ -29,10 +29,9 @@ h1 {
 }
 
 /*Gaming zone*/
-#rooms-images img {
+ img {
     width: 100%;
-    display: none;
-
+    display: none;        
 }
 
 #questions {
@@ -71,6 +70,15 @@ h1 {
 
 #red{
     color: red;
+}
+
+#finish {
+    display: none;
+    color:#3B0918;
+    margin: 5%;
+    float: right;
+
+
 }
 
 /* Media queries -- For medium screen sizes between 700px and 1024px width */

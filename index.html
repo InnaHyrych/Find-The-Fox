@@ -29,35 +29,40 @@
 
     <div id="rooms-images">
         
-        <img src="assets/images/house.jpg" alt="House" id="house">
-        <img src="assets/images/corridor.jpg" alt="Corridor" id="corridor">
-        <img src="assets/images/kitchen.jpg" alt="Kitchen" id="kitchen">
-        <img src="assets/images/sitingroom.jpg" alt="Sitingroom">
-        <img src="assets/images/bedroom.jpg" alt="Bedroom" id="bedroom">
-        <img src="assets/images/diningroom.jpg" alt="Diningroom">
-        <img src="assets/images/astronaut.jpg" alt="Space" id="space">
-        <img src="assets/images/fox.jpg" alt="Fox">
+        <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
+        <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
+        <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
+        <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
+        <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
+        <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
+        <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
+        <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
 
     </div>
 
+    <br>
+    <div id="paragraph">
     <p id="questions">Some question</p>
+    </div>
 
     <!--Selection buttons-->
 
     <div id="question-area">
-        <button  class="door-blue" id="blueanswer">
+        <button data-type="button"  class="door-blue" id="blueanswer">
             <i class="fas fa-door-closed" id="blue"></i>
         </button>
-        <button type="button"  class="door door-red" id="redanswer">
+        <button data-type="button"  class="door door-red" id="redanswer">
             <i class="fas fa-door-closed" id="red"></i>
         </button>
-        <button type="button" class="door door-yellow" id="yellowanswer">
+        <button data-type="button" class="door door-yellow" id="yellowanswer">
             <i class="fas fa-door-closed" id="yellow"></i>
         </button>
-        <button type="button" class="door door-green" id="greenanswer">
+        <button data-type="button" class="door door-green" id="greenanswer">
             <i class="fas fa-door-closed" id="green"></i>
         </button>    
     </div>
+
+    <button type="submit" id="finish">Play again</button>
 
 <script src="assets/js/script.js"></script>    
 </body>
