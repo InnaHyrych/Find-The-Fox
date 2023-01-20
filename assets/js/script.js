@@ -8,16 +8,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /*----------Create Array for buttons*/
 
-    let buttonBlue = document.getElementById('blue');
+    //let buttonBlue = document.getElementById('blue');
     let buttonRed = document.getElementById('redanswer');
     let buttonYellow = document.getElementById('yellowanswer');
     let buttonGreen = document.getElementById('greenanswer');
     
     let buttonArray = [];
-        buttonArray.push(buttonBlue);
+        //buttonArray.push(buttonBlue);
         buttonArray.push(buttonRed);
         buttonArray.push(buttonYellow);
-        buttonArray.push(buttonGreen);
+        buttonArray.push(buttonGreen); 
+          
         
 /*------------Create Array for images*/    
     let imagesArray = [];
@@ -29,10 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
         imagesArray.push(document.getElementById('diningroom'));
         imagesArray.push(document.getElementById('space'));
         imagesArray.push(document.getElementById('fox'));
-        console.log(imagesArray);
-         
+                 
 /**
- * Removes the previous image after the user pressed the button
+ * Removes the previous image after user pressed the button
  */
     function clearScreen() {
         for (let Images of imagesArray)           
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
  let blueDoor = document.getElementById("blueanswer"); 
  
  /**
-  * When user push on the blue door, he always will see image with spase
+  * When user push on the blue door, he always will see image with Spase
   */
   function onBlueDoor() {  
 
@@ -50,44 +50,113 @@ document.addEventListener("DOMContentLoaded", function() {
             let Space = document.getElementById('space').style.display = 'block';
             let Message1 = 'Hello! You are in space! There are no Foxes here, go back on the Earth!'  
             questionsText.textContent = Message1;
-            console.log(Message1);             
-}    
+            console.log(Message1);
+  }            
 
-    blueDoor.addEventListener("click", onBlueDoor);  
-  
-for ( let button of buttonArray) {
+blueDoor.addEventListener("click", onBlueDoor);
 
-button.addEventListener("click", function() 
-    {
-        if (this.getAttribute('id') === 'redanswer') 
-        {
-            clearScreen();
-            let Corridor = document.getElementById('corridor').style.display = 'block';
-            let Message2 = 'Corridor.'  
-            questionsText.textContent = Message2;
-            console.log(Message2); 
-        } 
-        else if (this.getAttribute('id') === 'yellowanswer') 
-        {
-            clearScreen()
-            let Kitchen = document.getElementById('kitchen').style.display = 'block';
-            let Message3 = 'Kitchen.'  
-            questionsText.textContent = Message3;
-            console.log(Message3); 
-        } 
-        else if (this.getAttribute('id') === 'greenanswer')
-        {
-            clearScreen()
-            let Fox = document.getElementById('fox').style.display = 'block';
-            let Message4 = 'Fox.'  
-            questionsText.textContent = Message4;
-            console.log(Message4);               
-            let finishButton = document.getElementById('finish').style.display = "block";
-        }
 
-    }) 
-}
+/*------------Create Array for functions*/
+let functionsArray = [
+    
+/**
+ * Removes previous image,
+ * makes image "corridor.jpg" visible When user push on the random button,
+ * displey text under the image
+ */
+function inCorridor() {
+    clearScreen();
+    let Corridor = document.getElementById('corridor').style.display = 'block';
+    let Message2 = 'Corridor.'  
+    questionsText.textContent = Message2;
+    console.log(Message2);
+},
 
+/**
+ * Removes previous image,
+ * makes image "kitchen.jpg" visible When user push on the random button,
+ * displey text under the image
+ */
+function inKitchen() {
+    clearScreen()
+    let Kitchen = document.getElementById('kitchen').style.display = 'block';
+    let Message3 = 'Kitchen.'  
+    questionsText.textContent = Message3;
+    console.log(Message3);
+},
+
+/**
+ * Removes previous image,
+ * makes image "bedroom.jpg" visible When user push on the random button,
+ * displey text under the image
+ */
+function inBedroom() {
+    clearScreen()
+    let Bedroom = document.getElementById('bedroom').style.display = 'block';
+    let Message4 = 'Bedroom.'  
+    questionsText.textContent = Message4;
+    console.log(Message4);               
+    
+},
+
+/**
+ * Removes previous image,
+ * makes image "diningroom.jpg" visible When user push on the random button,
+ * displey text under the image
+ */
+function inDiningroom() {
+    clearScreen()
+    let Diningroom = document.getElementById('diningroom').style.display = 'block';
+    let Message5 = 'Diningroom.'  
+    questionsText.textContent = Message5;
+    console.log(Message5);               
+    
+},
+
+/**
+ * Removes previous image,
+ * makes image "sitingroom.jpg" visible When user push on the random button,
+ * displey text under the image
+ */
+function inSitingroom() {
+    clearScreen()
+    let Sitingroom = document.getElementById('sitingroom').style.display = 'block';
+    let Message6 = 'Sitingroom.'  
+    questionsText.textContent = Message6;
+    console.log(Message6);               
+    
+},
+
+/**
+ * Removes previous image,
+ * makes image "fox.jpg" visible When user push on the random button,
+ * displey text under the image,
+ * display button "Play Again"
+ */
+function inFox() {
+    clearScreen()
+    let Fox = document.getElementById('fox').style.display = 'block';
+    let Message7 = 'Fox.'  
+    questionsText.textContent = Message7;
+    console.log(Message7);               
+    let finishButton = document.getElementById('finish').style.display = "block";
+}];
+
+console.log(functionsArray); 
+
+
+/**
+ * Calls a random function from the "functionsArray" list, 
+ * when the button was click
+ */   
+for (button of buttonArray) {
+    button.addEventListener('click', function() {
+       
+        let img = functionsArray[Math.floor(Math.random() * functionsArray.length)];
+        img();
+    })
+}          
+    
 let PlayAgain = document.getElementById('finish');
 
 /**
