@@ -1,27 +1,25 @@
-let questionsText = document.getElementById('questions');
-
-document.addEventListener("DOMContentLoaded", function() {
-    let House = document.getElementById('house');
-    House.style.display = 'block';
+function download() {
+    var house = document.getElementById('house');
+    house.style.display = 'block';
     questionsText.textContent = "Hey! Welcome to our little house)) The Fox hid somewhere in it. Can you find her? ... P.S. Don't go through the blue door!";
-    console.log("HERE 1"); 
-})
+}
+document.addEventListener("DOMContentLoaded", download); 
 
 /*----------Create Array for buttons*/
 
-let buttonRed = document.getElementById('redanswer');
-let buttonYellow = document.getElementById('yellowanswer');
-let buttonGreen = document.getElementById('greenanswer');
+var buttonRed = document.getElementById('redanswer');
+var buttonYellow = document.getElementById('yellowanswer');
+var buttonGreen = document.getElementById('greenanswer');
     
-let buttonArray = [];
+var buttonArray = [];
 
     buttonArray.push(buttonRed);
     buttonArray.push(buttonYellow);
     buttonArray.push(buttonGreen);           
         
 /*------------Create Array for images*/    
-let imagesArray = [];
-    imagesArray.push(document.getElementById('house'))
+var imagesArray = [];
+    imagesArray.push(document.getElementById('house'));
     imagesArray.push(document.getElementById('corridor'));
     imagesArray.push(document.getElementById('kitchen'));
     imagesArray.push(document.getElementById('sitingroom'));
@@ -40,6 +38,7 @@ function clearScreen() {
 }   
 
 let blueDoor = document.getElementById("blueanswer"); 
+let questionsText = document.getElementById('questions');
  
 /**
 * When user push on the blue door, he always will see image with Spase
@@ -160,7 +159,7 @@ function inFox() {
     a.setAttribute("href", "https://www.saveafox.org");
     questionsText.appendChild(a);
     let textLink = document.getElementById('site');
-    
+
     console.log(textLink);
 
     questionsText.innerHTML = "Congratulation! You have found the Fox!" +  
@@ -202,5 +201,5 @@ let finishButton = document.getElementById('finish');
  * to start game from the begining
  */
 finishButton.addEventListener('click', function () {
-    document.location.reload()
-    })
+    document.location.reload();
+    });
