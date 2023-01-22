@@ -1,3 +1,4 @@
+var questionsText = document.getElementById('questions');
 function download() {
     var house = document.getElementById('house');
     house.style.display = 'block';
@@ -33,12 +34,12 @@ var imagesArray = [];
 */
 function clearScreen() {
     for (let Images of imagesArray) {           
-        Images.style.display = 'none'
+        Images.style.display = 'none';
     }
 }   
 
 let blueDoor = document.getElementById("blueanswer"); 
-let questionsText = document.getElementById('questions');
+
  
 /**
 * When user push on the blue door, he always will see image with Spase
@@ -49,16 +50,15 @@ function onBlueDoor() {
     let Space = document.getElementById('space').style.display = 'block';
     let Message1 = 'You teleported to space! There are no Foxes here, cya ! .'; 
     questionsText.textContent = Message1;
-    console.log(Message1);
     window.addEventListener('click', function() {
     //all buttons will disappear from the screen
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
     document.getElementById ('yellowanswer').style.display = 'none';
     document.getElementById ('greenanswer').style.display = 'none';
-    let finishButton = document.getElementById('finish').style.display = "block";//Display button "Play Again"
-    }
-    )
+    let finishButton = document.getElementById('finish');
+    finishButton.style.display = "block";//Display button "Play Again"
+    });
 }            
 
 blueDoor.addEventListener("click", onBlueDoor);
@@ -78,7 +78,6 @@ function inCorridor() {
     Instead of bothering to dig their own den, they sometimes steal a badger's burrow (called a sett) by scaring the owner away 
     and making his house smell so bad he doesn't want it back.`;  
     questionsText.textContent = Message2;
-    console.log(Message2);
 },
 
 /**
@@ -87,12 +86,11 @@ function inCorridor() {
  * displey text under the image
  */
 function inKitchen() {
-    clearScreen()
+    clearScreen();
     let Kitchen = document.getElementById('kitchen').style.display = 'block';
     let Message3 = `Foxes are omnivores. This means that they eat meat and vegetation. 
     A fox's diet can consist of small animals, such as lizards, voles, rats, mice, rabbits and hares. They round out their diet with birds, fruits and bugs.`;
     questionsText.textContent = Message3;
-    console.log(Message3);
 },
 
 /**
@@ -101,13 +99,12 @@ function inKitchen() {
  * displey text under the image
  */
 function inBedroom() {
-    clearScreen()
+    clearScreen();
     let Bedroom = document.getElementById('bedroom').style.display = 'block';
     let Message4 = `Foxes typically live in the forest and make their den by digging holes and making burrows for themselves.
      These will allow the fox to attain a cool area to sleep in. 
      Foxes also use their dens to store food to save for later and keep their pups safe from other animals.`;  
     questionsText.textContent = Message4;
-    console.log(Message4);               
 },
 
 /**
@@ -116,12 +113,11 @@ function inBedroom() {
  * displey text under the image
  */
 function inDiningroom() {
-    clearScreen()
+    clearScreen();
     let Diningroom = document.getElementById('diningroom').style.display = 'block';
     let Message5 = ` Foxes seem to be very playful. They can often be seen playing with a fallen apple as though it were a ball, or chasing their own tails. 
     This fooling around sometimes serves a second purpose: if a curious rabbit comes closer to watch, it will find itself gobbled up by the hungry fox.`;  
     questionsText.textContent = Message5;
-    console.log(Message5);              
 },
 
 /**
@@ -130,13 +126,12 @@ function inDiningroom() {
  * displey text under the image
  */
 function inSitingroom() {
-    clearScreen()
+    clearScreen();
     let Sitingroom = document.getElementById('sitingroom').style.display = 'block';
     let Message6 = `Scientists believe that foxes may have had relationships with humans before dogs did. 
     There are 16,500 year old remains of a man and his pet fox in Jordan, 
     which is 4000 years older than any dog and human remains we have found that have been buried together.`;  
     questionsText.textContent = Message6;
-    console.log(Message6);                  
 },
 
 /**
@@ -146,7 +141,7 @@ function inSitingroom() {
  * display button "Play Again"
  */
 function inFox() {
-    clearScreen()
+    clearScreen();
     let Fox = document.getElementById('fox').style.display = 'block';
     
     //Link
@@ -176,22 +171,19 @@ function inFox() {
     document.getElementById ('redanswer').disabled = true;
     document.getElementById ('yellowanswer').disabled = true;
     document.getElementById ('greenanswer').disabled = true;
-}];
-
-console.log(functionsArray); 
+}]; 
 
 /**
  * Calls a random function from the "functionsArray" list, 
  * when the button was click
  */   
-for (button of buttonArray) {
-    button.addEventListener('click', function() {
-       
+for ( var button of buttonArray) {
+    button.addEventListener('click', function() {       
         let img = functionsArray[Math.floor(Math.random() * functionsArray.length)];
         img();
         functionsArray.splice(functionsArray[img], 1);
         console.log(functionsArray);
-    })
+    });
 }          
     
 let finishButton = document.getElementById('finish');
