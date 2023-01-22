@@ -21,7 +21,7 @@ h1 {
 .logo {
     color: #B8390E;
     font-size: 300%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .logo:hover {
@@ -97,17 +97,17 @@ h1 {
 @media screen and (min-width: 600px) and (max-width: 1200px) {
 
     #rooms-images {
-        width: 60%;
-        margin: auto 20%;
+        width: 50%;
+        margin: auto 25%;
     }  
 
     #questions {
-        width: 60%;
-        margin: 5% 20%;
+        width: 50%;
+        margin: 3% 25%;
     }
 
     #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     #blueanswer, #redanswer, #yellowanswer, #greenanswer {
@@ -117,7 +117,7 @@ h1 {
     #finish {
         width: 5rem;
         height: 2rem;
-        margin-right: 20%;
+        margin-right: 25%;
     }
 }
 
@@ -126,27 +126,27 @@ h1 {
 @media screen and (min-width: 1200px) {
     
     #rooms-images {
-        width: 60%;
-        margin: auto 20%;
+        width: 40%;
+        margin: auto 30%;
     }  
 
     #questions {
-        width: 50%;
-        margin: 5% 25%;
+        width: 40%;
+        margin: 2% 30%;
     }
 
     #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #blueanswer, #redanswer, #yellowanswer, #greenanswer {
         margin: 1%;
-        padding: 3%;
+        padding: 2%;
     }
     
     #finish {
     width: 10rem;
     height: 3rem;
-    margin-right: 20%;          
+    margin-right: 30%;          
     }
 } 
