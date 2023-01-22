@@ -8,52 +8,60 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /*----------Create Array for buttons*/
 
-    //let buttonBlue = document.getElementById('blue');
-    let buttonRed = document.getElementById('redanswer');
-    let buttonYellow = document.getElementById('yellowanswer');
-    let buttonGreen = document.getElementById('greenanswer');
+let buttonRed = document.getElementById('redanswer');
+let buttonYellow = document.getElementById('yellowanswer');
+let buttonGreen = document.getElementById('greenanswer');
     
-    let buttonArray = [];
-        //buttonArray.push(buttonBlue);
-        buttonArray.push(buttonRed);
-        buttonArray.push(buttonYellow);
-        buttonArray.push(buttonGreen); 
-          
+let buttonArray = [];
+
+    buttonArray.push(buttonRed);
+    buttonArray.push(buttonYellow);
+    buttonArray.push(buttonGreen);           
         
 /*------------Create Array for images*/    
-    let imagesArray = [];
-        imagesArray.push(document.getElementById('house'))
-        imagesArray.push(document.getElementById('corridor'));
-        imagesArray.push(document.getElementById('kitchen'));
-        imagesArray.push(document.getElementById('sitingroom'));
-        imagesArray.push(document.getElementById('bedroom'));
-        imagesArray.push(document.getElementById('diningroom'));
-        imagesArray.push(document.getElementById('space'));
-        imagesArray.push(document.getElementById('fox'));
+let imagesArray = [];
+    imagesArray.push(document.getElementById('house'))
+    imagesArray.push(document.getElementById('corridor'));
+    imagesArray.push(document.getElementById('kitchen'));
+    imagesArray.push(document.getElementById('sitingroom'));
+    imagesArray.push(document.getElementById('bedroom'));
+    imagesArray.push(document.getElementById('diningroom'));
+    imagesArray.push(document.getElementById('space'));
+    imagesArray.push(document.getElementById('fox'));
                  
 /**
- * Removes the previous image after user pressed the button
- */
-    function clearScreen() {
-        for (let Images of imagesArray)           
-        Images.style.display = 'none';
-    }   
+* Removes the previous image after user pressed the button
+*/
+function clearScreen() {
+    for (let Images of imagesArray) {           
+        Images.style.display = 'none'
+    }
+}   
 
- let blueDoor = document.getElementById("blueanswer"); 
+let blueDoor = document.getElementById("blueanswer"); 
  
- /**
-  * When user push on the blue door, he always will see image with Spase
-  */
-  function onBlueDoor() {  
+/**
+* When user push on the blue door, he always will see image with Spase
+*/
+function onBlueDoor() {  
 
-            clearScreen();
-            let Space = document.getElementById('space').style.display = 'block';
-            let Message1 = 'Hello! You are in space! There are no Foxes here, go back on the Earth!'  
-            questionsText.textContent = Message1;
-            console.log(Message1);
-  }            
+    clearScreen();
+    let Space = document.getElementById('space').style.display = 'block';
+    let Message1 = 'Hello! You are in space! There are no Foxes here, go back on the Earth!'  
+    questionsText.textContent = Message1;
+    console.log(Message1);
+   window.addEventListener('click', function() {
+        document.location.reload()})
+}            
 
 blueDoor.addEventListener("click", onBlueDoor);
+
+/*if (onBlueDoor) {
+    console.log('test-----1');
+    window.addEventListener('click', function() {
+        location.reload()  
+    })
+}*/
 
 
 /*------------Create Array for functions*/
@@ -96,7 +104,6 @@ function inBedroom() {
     let Message4 = 'Bedroom.'  
     questionsText.textContent = Message4;
     console.log(Message4);               
-    
 },
 
 /**
@@ -109,8 +116,7 @@ function inDiningroom() {
     let Diningroom = document.getElementById('diningroom').style.display = 'block';
     let Message5 = 'Diningroom.'  
     questionsText.textContent = Message5;
-    console.log(Message5);               
-    
+    console.log(Message5);              
 },
 
 /**
@@ -123,8 +129,7 @@ function inSitingroom() {
     let Sitingroom = document.getElementById('sitingroom').style.display = 'block';
     let Message6 = 'Sitingroom.'  
     questionsText.textContent = Message6;
-    console.log(Message6);               
-    
+    console.log(Message6);                  
 },
 
 /**
@@ -138,12 +143,18 @@ function inFox() {
     let Fox = document.getElementById('fox').style.display = 'block';
     let Message7 = 'Fox.'  
     questionsText.textContent = Message7;
-    console.log(Message7);               
-    let finishButton = document.getElementById('finish').style.display = "block";
+    console.log(Message7);
+    let finishButton = document.getElementById('finish').style.display = "block";//Display button "Play Again"
+    /**
+     * Block all buttons ecsept "Play Again"
+     */
+    document.getElementById ('blueanswer').disabled = true;
+    document.getElementById ('redanswer').disabled = true;
+    document.getElementById ('yellowanswer').disabled = true;
+    document.getElementById ('greenanswer').disabled = true;
 }];
 
 console.log(functionsArray); 
-
 
 /**
  * Calls a random function from the "functionsArray" list, 
@@ -157,14 +168,12 @@ for (button of buttonArray) {
     })
 }          
     
-let PlayAgain = document.getElementById('finish');
+let finishButton = document.getElementById('finish');
 
 /**
  * Reload the current URL after user pushed 'Play again' button
  * to start game from the begining
  */
-PlayAgain.addEventListener('click', function () {
+finishButton.addEventListener('click', function () {
     document.location.reload()
-});
-
-
+    })
