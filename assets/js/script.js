@@ -51,28 +51,23 @@ function onBlueDoor() {
     document.getElementById('space').style.display = 'block';
     var Message1 = 'You teleported to space! There are no Foxes here, cya ! .'; 
     questionsText.textContent = Message1;
-    //sound();
-    window.addEventListener('click', function() {
-    //all buttons will disappear from the screen
+    
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
     document.getElementById ('yellowanswer').style.display = 'none';
     document.getElementById ('greenanswer').style.display = 'none';
     document.getElementById('finish').style.display = "block";//Display button "Play Again"
-    
-    });
-} 
 
+} 
 blueDoor.addEventListener("click", onBlueDoor);
 
-
-
-    //if (blueDoor.addEventListener("click", onBlueDoor)) {
-       // alert('Hi at first');
-        //var audio = new Audio();
-        //audio.src = ("assets/sound/wrong-place.mp3");
-        //audio.play();    
-    //}
+    if (blueDoor.addEventListener("click", onBlueDoor)) {
+        alert('Hi at first');
+        var audio = new Audio();
+        audio.src = ("assets/sound/wrong-place.mp3");
+        audio.play();
+        alert('Second Hi!');    
+    }
 
 
  
