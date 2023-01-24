@@ -52,6 +52,11 @@ function onBlueDoor() {
     var Message1 = 'You teleported to space! There are no Foxes here, cya ! .'; 
     questionsText.textContent = Message1;
     
+    //Add sound after pushed blue button
+    let audio = new Audio();
+    audio.src = ("assets/sound/wrong-place.mp3");
+    audio.play();
+    
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
     document.getElementById ('yellowanswer').style.display = 'none';
@@ -151,18 +156,16 @@ function inSitingroom() {
  */
 function inFox() {
     clearScreen();
-    document.getElementById('fox').style.display = 'block';
-    
-    //Link
-    
+    document.getElementById('fox').style.display = 'block';           
     questionsText.innerHTML = `'Congratulation! You have found the Fox!  
     Foxes are beautiful animals, with their delicate faces and bushy tails, but don't just love them for their good looks. 
     The fox species are intriguing animals, known for their intelligence, playfulness, and lithe athleticism.  
-    And you can help to save them! Push <a href="https://www.saveafox.org" target="_blanc">here</a> and learn how!`;  
-       
+    And you can help to save them! Push <a href="https://www.saveafox.org" target="_blanc">here</a> and learn how!`;        
     document.getElementById('finish').style.display = "block";//Display button "Play Again"
-    sound ();
-
+    //Add sound after user finded fox
+    let audio = new Audio();
+    audio.src = ("assets/sound/success.mp3");
+    audio.play();
     /**
      * Block all buttons ecsept "Play Again"
      */
