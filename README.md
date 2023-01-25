@@ -6,44 +6,51 @@ This game was created to draw attention to the problem of fox survival. It is in
 
 ## **Table of Contents**
 * Goals
+
 * Visual Design
   - Icons
   - Colours
-  - Styling
+  
 * Features
+
 * Testing  
   - Screen Testing
   - Performance Testing
   - Browser Compatibility
   - Validator Testing 
   - Fixed bugs
+
 * Deployment
+
 * Credits
     - Content
     - Media
+
+
+
 
 ## **Goals**
 
 ## **Visual Design**
 
-### *Icons*
+### Icons
 
 ![Icons](assets/images/readme_img/icons.jpg)
 
+Icons were taken from the Fontaweysom Icon Library and utilised as classes in the <i> tag into the interactive buttons. They can easily be styled using other classes or IDs in the same tag.
 
-
-### *Colours*
+### Colours
 
 ![Colours](assets/images/readme_img/colours.jpg)
 
-[Shemecolor.com](https://www.schemecolor.com/without-fear.php)
+The colors used in the game emphasize the natural theme. I used [Shemecolor.com](https://www.schemecolor.com/without-fear.php) website to choose harmoniously combined colors. 
 
+## **Features**
 
-### *Styling*
 
 ## **Testing**
 
-### *Screen Testing*
+### Screen Testing
 
 I tested my game appearance and functionality across multiple devices and screen sizes, below are some examples of the testing performed and the results.
 
@@ -63,7 +70,7 @@ I tested my game appearance and functionality across multiple devices and screen
 
 ![Resolution Mobile phone](assets/images/readme_img/mobile_screen.jpg)
 
-### *Performance Testing*
+### Performance Testing
 
 I conducted tests on how quickly my game loaded using different connections such as mobile data and home fibre via Wi-Fi in most cases the website always loaded within 2-5 seconds from mobile data and under 2 seconds when using WIFI from my home fibre connection.
 
@@ -71,7 +78,7 @@ I conducted tests on how quickly my game loaded using different connections such
 
 ![Loaded2](assets/images/readme_img/2023-01-25_19-17-39.jpg)
 
-### *Browser Compatibility*
+### Browser Compatibility
 
 The game was tested across the following browsers for any bugs:
 
@@ -80,11 +87,11 @@ The game was tested across the following browsers for any bugs:
 - Edge
 
 Testing document:
-
+<br>
 https://1drv.ms/x/s!AvJgYZrLWaJmexwwAqsLAe21lZ0?e=Fl39f5
 
 
-### *Validator Testing*
+### Validator Testing
 
 * HTML No errors were returned when passing through the official W3C validator
 * CSS No errors were found when passing through the official W3C CSS validator. 
@@ -119,7 +126,9 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 ## **Credits**
 
-### *Content:*
+
+
+### Content:
 
 Information for the game Finde the Fox was taken from:
 * https://www.saveafox.org/
@@ -136,7 +145,7 @@ Fonts were taken from [Google Fonts](https://fonts.google.com/).
 Favicon created on [favicon.io](https://favicon.io/) site.
 
 
-### *Media*
+### Media
 
 All images used within this game were taken in [Pexels - Free Stock Photos](https://www.pexels.com/) site.
 <br>
