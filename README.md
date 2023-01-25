@@ -4,17 +4,36 @@
 
 This game was created to draw attention to the problem of fox survival. It is interesting simple game, where user can learn  interesting facts about foxes life and, and also follow the links and help organizatios involved in rescuing foxes from fur farms and foxes hunted for fun.
 
-## Table of Contents
-
-* ### Validator Testing
+## **Table of Contents**
+* Goals
+* Visual Design
+  - Fonts
+  - Icons
+  - Colours
+  - Styling
+* Features
+* Testing  
+  - CSS Style Testing
+  - Performance Testing
+  - Browser Compatibility
+  - Validator Testing 
+  - Fixed bugs
 * Deployment
 * Credits
     - Content
     - Media
 
+## **Goals**
 
-## Validator Testing 
-#Validator_Testing
+## **Visual Design**
+
+### Colours
+
+![Colours](assets/images/readme_img/colours.jpg)
+
+
+
+### Validator Testing 
 
 * HTML No errors were returned when passing through the official W3C validator
 * CSS No errors were found when passing through the official W3C CSS validator. 
@@ -38,7 +57,7 @@ works flawlessly in all browsers as shown above in the section "Testing".
 
 
 
-## Deployment
+## **Deployment**
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
@@ -47,7 +66,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 * The live link can be found here - https://innahyrych.github.io/Find-The-Fox/
 
-## Credits
+## **Credits**
 
 ### Content:
 
