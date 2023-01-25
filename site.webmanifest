@@ -1,6 +1,6 @@
 {
-    "name": "FindTheFox",
-    "short_name": "FindTheFox",
+    "name": "Find-The-Fox",
+    "short_name": "Find-The-Fox",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
