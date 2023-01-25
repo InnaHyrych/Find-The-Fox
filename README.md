@@ -1,15 +1,20 @@
-# *Find The Fox*
+![Header](assets/images/readme_img/Header.jpg)
 
-## The content
+![Screen display](assets/images/readme_img/imagin3.jpg)
 
-* Validator Testing
+This game was created to draw attention to the problem of fox survival. It is interesting simple game, where user can learn  interesting facts about foxes life and, and also follow the links and help organizatios involved in rescuing foxes from fur farms and foxes hunted for fun.
+
+## Table of Contents
+
+* ### Validator Testing
 * Deployment
 * Credits
     - Content
     - Media
 
 
-## Validator Testing
+## Validator Testing 
+#Validator_Testing
 
 * HTML No errors were returned when passing through the official W3C validator
 * CSS No errors were found when passing through the official W3C CSS validator. 
