@@ -67,6 +67,22 @@ I tested my game appearance and functionality across multiple devices and screen
 
 I conducted tests on how quickly my game loaded using different connections such as mobile data and home fibre via Wi-Fi in most cases the website always loaded within 2-5 seconds from mobile data and under 2 seconds when using WIFI from my home fibre connection.
 
+![Loaded1](assets/images/readme_img/2023-01-25_19-15-23.jpg)
+
+![Loaded2](assets/images/readme_img/2023-01-25_19-17-39.jpg)
+
+### *Browser Compatibility*
+
+The game was tested across the following browsers for any bugs:
+
+- Chrome
+- Firefox
+- Edge
+
+Testing document:
+
+https://1drv.ms/x/s!AvJgYZrLWaJmexwwAqsLAe21lZ0?e=Fl39f5
+
 
 ### *Validator Testing*
 
