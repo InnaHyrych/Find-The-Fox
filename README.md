@@ -7,13 +7,12 @@ This game was created to draw attention to the problem of fox survival. It is in
 ## **Table of Contents**
 * Goals
 * Visual Design
-  - Fonts
   - Icons
   - Colours
   - Styling
 * Features
 * Testing  
-  - CSS Style Testing
+  - Screen Testing
   - Performance Testing
   - Browser Compatibility
   - Validator Testing 
@@ -27,13 +26,49 @@ This game was created to draw attention to the problem of fox survival. It is in
 
 ## **Visual Design**
 
-### Colours
+### *Icons*
+
+![Icons](assets/images/readme_img/icons.jpg)
+
+
+
+### *Colours*
 
 ![Colours](assets/images/readme_img/colours.jpg)
 
+[Shemecolor.com](https://www.schemecolor.com/without-fear.php)
 
 
-### Validator Testing 
+### *Styling*
+
+## **Testing**
+
+### *Screen Testing*
+
+I tested my game appearance and functionality across multiple devices and screen sizes, below are some examples of the testing performed and the results.
+
+* PC Monitor – Full HD 1920px x 1080px 
+
+![Resolution 1920x1080](assets/images/readme_img/display_resolution1920.jpg)
+
+* Windows 10 Laptop 1366px x 768px
+
+![Resolution 1366x768](assets/images/readme_img/display_resolution1366.jpg)
+
+* Lenovo Tablet 10.1” screen
+
+![Resolution Tablet](assets/images/readme_img/Tablet.jpg)
+
+* Android OnePlus 6.3” screen
+
+![Resolution Mobile phone](assets/images/readme_img/mobile_screen.jpg)
+
+### *Performance Testing*
+
+I conducted tests on how quickly my game loaded using different connections such as mobile data and home fibre via Wi-Fi in most cases the website always loaded within 2-5 seconds from mobile data and under 2 seconds when using WIFI from my home fibre connection.
+
+
+### *Validator Testing*
 
 * HTML No errors were returned when passing through the official W3C validator
 * CSS No errors were found when passing through the official W3C CSS validator. 
@@ -68,7 +103,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 ## **Credits**
 
-### Content:
+### *Content:*
 
 Information for the game Finde the Fox was taken from:
 * https://www.saveafox.org/
@@ -85,7 +120,7 @@ Fonts were taken from [Google Fonts](https://fonts.google.com/).
 Favicon created on [favicon.io](https://favicon.io/) site.
 
 
-### Media
+### *Media*
 
 All images used within this game were taken in [Pexels - Free Stock Photos](https://www.pexels.com/) site.
 <br>
