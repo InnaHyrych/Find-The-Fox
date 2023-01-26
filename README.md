@@ -10,7 +10,7 @@ This game was created to draw attention to the problem of fox survival. It is  s
   - [Icons](#icons)
   - [Colours](#colours)
   
-* Features
+* [Funtionality](#Funtionality)
 
 * Testing  
   - [UI Testing](#ui-testing)
