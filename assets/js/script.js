@@ -69,7 +69,7 @@ blueDoor.addEventListener("click", onBlueDoor);
     if (blueDoor.addEventListener("click", onBlueDoor)) {
         alert('Hi at first');
         var audio = new Audio();
-        audio.src = ("assets/sound/wrong-place.mp3");
+        //audio.src = ("assets/sound/wrong-place.mp3");
         audio.play();
         alert('Second Hi!');    
     }
