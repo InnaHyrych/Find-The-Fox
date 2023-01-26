@@ -5,7 +5,7 @@
 This game was created to draw attention to the problem of fox survival. It is interesting simple game, where user can learn  interesting facts about foxes life and, and also follow the links and help organizatios involved in rescuing foxes from fur farms and foxes hunted for fun.
 
 ## **Table of Contents**
-* Goals
+* [Goals](#Goals)
 
 * Visual Design
   - Icons
