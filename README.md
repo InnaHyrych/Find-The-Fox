@@ -6,6 +6,9 @@ This game was created to draw attention to the problem of fox survival. It is  s
 
 ## **Table of Contents**
 * [Goals](#Goals)
+  - Educate users in a fun freindly manner on foxes
+  - Draw attention to the fox cruelty in fox sport hunting.
+  - Stimulate users to get involved or donate towards saving wildlife.
 
 * Visual Design
   - [Icons](#icons)
@@ -45,8 +48,32 @@ Icons were taken from the Fontaweysom Icon Library and utilised as classes in th
 
 The colors used in the game emphasize the natural theme. I used [Shemecolor.com](https://www.schemecolor.com/without-fear.php) website to choose harmoniously combined colors. 
 
-## **Features**
+## **Funtionality**
+  - The page consists of 3 main sections for the user:
+    - The image section - which is a visual aid to help the user to feel more involved in the game.
+    - The storyline text section - which describes the results of the users selection.
+    - The buttons - which allow the user to choose their next move in the game.
+- Given a user selects a button a random storyline text and matching image are displayed to the user, this random selection was done as using a randomise function as displayed below:
 
+````for (var button of buttonArray) {
+    button.addEventListener('click', function() {       
+        let img = functionsArray[Math.floor(Math.random() * functionsArray.length)];
+        img();
+        functionsArray.splice(functionsArray[img], 1);
+        console.log(functionsArray);
+    });
+}    
+````
+- When the user loses the game by floating away in space or finds the fox a sound is played to enhance the atmosphere, but I have added an if statement to read the text displayed on screen and only play this sound when a specific word is displayued, below is how this was achieved:
+````
+if(document.getElementById('questions').textContent.includes('teleported'))
+    {
+        let audio = new Audio();
+        audio.src = ("assets/sound/wrong-place.mp3");
+        audio.play();
+        
+    }
+````
 
 ## **Testing**
 
@@ -113,7 +140,9 @@ The function:
 
 works flawlessly in all browsers as shown above in the section "Testing".
 
-### Fixed bugs
+### Unfixed bugs
+  - Ocassional console 404 error with Favicon.ico
+  - Ocassional 404 error with site.webmanifest
 
 ## **Deployment**
 
