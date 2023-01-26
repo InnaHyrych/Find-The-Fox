@@ -59,7 +59,7 @@ function onBlueDoor() {
         //audio.src = ("assets/sound/wrong-place.mp3");
         //audio.play();
         //comment
-        
+    }
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
     document.getElementById ('yellowanswer').style.display = 'none';
