@@ -55,9 +55,9 @@ function onBlueDoor() {
     //Add sound after pushed blue button
     if(document.getElementById('questions').innerHTML.includes("teleported")==false)
     {
-        let audio = new Audio();
-        audio.src = ("assets/sound/wrong-place.mp3");
-        audio.play();
+        //let audio = new Audio();
+        //audio.src = ("assets/sound/wrong-place.mp3");
+        //audio.play();
     }
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
