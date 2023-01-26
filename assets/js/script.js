@@ -53,7 +53,7 @@ function onBlueDoor() {
     questionsText.textContent = Message1;
     
     //Add sound after pushed blue button
-    if(document.getElementById('questions').innerHTML.includes("teleported")=false)
+    if(document.getElementById('questions').innerHTML.includes("teleported")==false)
     {
         let audio = new Audio();
         audio.src = ("assets/sound/wrong-place.mp3");
