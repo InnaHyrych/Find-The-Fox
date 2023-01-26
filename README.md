@@ -2,7 +2,7 @@
 
 ![Screen display](assets/images/readme_img/imagin3.jpg)
 
-This game was created to draw attention to the problem of fox survival. It is interesting simple game, where user can learn  interesting facts about foxes life and, and also follow the links and help organizatios involved in rescuing foxes from fur farms and foxes hunted for fun.
+This game was created to draw attention to the problem of fox survival. It is  simple game where the user can learn interesting facts about the life and habits of foxes. For the winner gets presented a link to a helpful organization involved in rescuing foxes from fur farms and sport hunters.
 
 ## **Table of Contents**
 * [Goals](#Goals)
