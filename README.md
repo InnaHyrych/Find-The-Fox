@@ -8,23 +8,23 @@ This game was created to draw attention to the problem of fox survival. It is in
 * [Goals](#Goals)
 
 * Visual Design
-  - Icons
-  - Colours
+  - [Icons](#icons)
+  - [Colours](#colours)
   
 * Features
 
 * Testing  
-  - Screen Testing
-  - Performance Testing
-  - Browser Compatibility
-  - Validator Testing 
-  - Fixed bugs
+  - [UI Testing](#ui-testing)
+  - [Performance Testing](#Performance-Testing)
+  - [Browser Compatibility](#Browser-Compatibility)
+  - [Validator Testing](#Validator-Testing)
+  - [Fixed bugs](#fixed-bugs)
 
-* Deployment
+* [Deployment](#Deployment)
 
 * Credits
-    - Content
-    - Media
+    - [Content](#Content)
+    - [Media](#Media)
 
 
 
@@ -50,7 +50,7 @@ The colors used in the game emphasize the natural theme. I used [Shemecolor.com]
 
 ## **Testing**
 
-### Screen Testing
+### UI Testing
 
 I tested my game appearance and functionality across multiple devices and screen sizes, below are some examples of the testing performed and the results.
 
@@ -113,7 +113,7 @@ The function:
 
 works flawlessly in all browsers as shown above in the section "Testing".
 
-
+### Fixed bugs
 
 ## **Deployment**
 
