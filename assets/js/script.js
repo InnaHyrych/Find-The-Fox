@@ -53,9 +53,9 @@ function onBlueDoor() {
     questionsText.textContent = Message1;
     
     //Add sound after pushed blue button
-    let audio = new Audio();
-    audio.src = ("assets/sound/wrong-place.mp3");
-    audio.play();
+    //let audio = new Audio();
+    //audio.src = ("assets/sound/wrong-place.mp3");
+    //audio.play();
     
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
@@ -132,6 +132,7 @@ function inDiningroom() {
     let Message5 = ` Foxes seem to be very playful. They can often be seen playing with a fallen apple as though it were a ball, or chasing their own tails. 
     This fooling around sometimes serves a second purpose: if a curious rabbit comes closer to watch, it will find itself gobbled up by the hungry fox.`;  
     questionsText.textContent = Message5;
+    addEventListener('click', )
 },
 
 /**
