@@ -53,10 +53,12 @@ function onBlueDoor() {
     questionsText.textContent = Message1;
     
     //Add sound after pushed blue button
-    //let audio = new Audio();
-    //audio.src = ("assets/sound/wrong-place.mp3");
-    //audio.play();
-    
+    if(document.getElementById('space').style.display)
+    {
+        let audio = new Audio();
+        audio.src = ("assets/sound/wrong-place.mp3");
+        audio.play();
+    }
     document.getElementById ('blueanswer').style.display = 'none';
     document.getElementById ('redanswer').style.display = 'none';
     document.getElementById ('yellowanswer').style.display = 'none';
@@ -64,18 +66,7 @@ function onBlueDoor() {
     document.getElementById('finish').style.display = "block";//Display button "Play Again"
 
 } 
-blueDoor.addEventListener("click", onBlueDoor);
-
-    if (blueDoor.addEventListener("click", onBlueDoor)) {
-        alert('Hi at first');
-        var audio = new Audio();
-        audio.src = ("assets/sound/wrong-place.mp3");
-        audio.play();
-        alert('Second Hi!');    
-    }
-
-
- 
+blueDoor.addEventListener("click", onBlueDoor); 
 
 /*------------Create Array for functions*/
 let functionsArray = [
