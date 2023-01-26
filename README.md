@@ -16,8 +16,9 @@ This game was created to draw attention to the problem of fox survival. It is  s
   - [UI Testing](#ui-testing)
   - [Performance Testing](#Performance-Testing)
   - [Browser Compatibility](#Browser-Compatibility)
+  - [Unfixed bugs](#unfixed-bugs)
   - [Validator Testing](#Validator-Testing)
-  - [Fixed bugs](#fixed-bugs)
+
 
 * [Deployment](#Deployment)
 
@@ -25,15 +26,17 @@ This game was created to draw attention to the problem of fox survival. It is  s
     - [Content](#Content)
     - [Media](#Media)
 
-
-
-
 ## **Goals**
- - Educate users in a fun freindly manner on foxes
-  - Draw attention to the fox cruelty in fox sport hunting.
+
+  - Educate users in a fun friendly manner on foxes.
+  - Draw attention to the fox cruelty in fox sport hunting and fur farms.
   - Stimulate users to get involved or donate towards saving wildlife.
 
 ## **Visual Design**
+
+### Style
+
+The game is created in a simple style, where the main attention is drawn to the game elements: imaga, text and buttons. So the user can intuitively understand the goal and rules of the game.
 
 ### Icons
 
@@ -50,8 +53,17 @@ The colors used in the game emphasize the natural theme. I used [Shemecolor.com]
 ## **Funtionality**
   - The page consists of 3 main sections for the user:
     - The image section - which is a visual aid to help the user to feel more involved in the game.
+
+    ![Images](assets/images/readme_img/imageF.jpg)
+
     - The storyline text section - which describes the results of the users selection.
+
+    ![Text](assets/images/readme_img/textF.jpg)
+
     - The buttons - which allow the user to choose their next move in the game.
+
+    ![IconsF](assets/images/readme_img/iconsF.jpg)
+
 - Given a user selects a button a random storyline text and matching image are displayed to the user, this random selection was done as using a randomise function as displayed below:
 
 ````for (var button of buttonArray) {
@@ -63,7 +75,7 @@ The colors used in the game emphasize the natural theme. I used [Shemecolor.com]
     });
 }    
 ````
-- When the user loses the game by floating away in space or finds the fox a sound is played to enhance the atmosphere, but I have added an if statement to read the text displayed on screen and only play this sound when a specific word is displayued, below is how this was achieved:
+- When the user finish the game by floating away in space or finds the fox a sound is played to enhance the atmosphere, but I have added an if statement to read the text displayed on screen and only play this sound when a specific word is displayued, below is how this was achieved:
 ````
 if(document.getElementById('questions').textContent.includes('teleported'))
     {
@@ -112,10 +124,15 @@ The game was tested across the following browsers for any bugs:
 - Firefox
 - Edge
 
+### Unfixed bugs
+  - Ocassional console 404 error with realfavicongenerator.net
+  - Ocassional 404 error with site.webmanifest
+
+  ![Unfixed Bug](assets/images/readme_img/bug.jpg)
+
 Testing document:
 <br>
 https://1drv.ms/x/s!AvJgYZrLWaJmexwwAqsLAe21lZ0?e=Fl39f5
-
 
 ### Validator Testing
 
@@ -139,10 +156,6 @@ The function:
 
 works flawlessly in all browsers as shown above in the section "Testing".
 
-### Unfixed bugs
-  - Ocassional console 404 error with Favicon.ico
-  - Ocassional 404 error with site.webmanifest
-
 ## **Deployment**
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -153,8 +166,6 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 * The live link can be found here - https://innahyrych.github.io/Find-The-Fox/
 
 ## **Credits**
-
-
 
 ### Content:
 
@@ -170,7 +181,11 @@ The icons were taken from [Font Awesome](https://fontawesome.com/).
 <br>
 Fonts were taken from [Google Fonts](https://fonts.google.com/).
 <br>
-Favicon created on [favicon.io](https://favicon.io/) site.
+Favicon created on [realfavicongenerator.net](https://realfavicongenerator.net/) site.
+<br>
+[Stack Overflow](https://stackoverflow.com/), 
+<br>
+[w3schools.com](https://www.w3schools.com/js/) were used for help with JavaScript.
 
 
 ### Media
