@@ -6,10 +6,6 @@ This game was created to draw attention to the problem of fox survival. It is  s
 
 ## **Table of Contents**
 * [Goals](#Goals)
-  - Educate users in a fun freindly manner on foxes
-  - Draw attention to the fox cruelty in fox sport hunting.
-  - Stimulate users to get involved or donate towards saving wildlife.
-
 * Visual Design
   - [Icons](#icons)
   - [Colours](#colours)
@@ -33,6 +29,9 @@ This game was created to draw attention to the problem of fox survival. It is  s
 
 
 ## **Goals**
+ - Educate users in a fun freindly manner on foxes
+  - Draw attention to the fox cruelty in fox sport hunting.
+  - Stimulate users to get involved or donate towards saving wildlife.
 
 ## **Visual Design**
 
