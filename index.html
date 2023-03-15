@@ -23,44 +23,50 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    
+    <link rel="stylesheet" href="assets/css/style.css">   
     
 
     <title> Find the Fox</title>
 </head>
 
 <body>
+    <header>
 
-    <h1>Where Is The Fox?</h1>
-    <a href="https://www.saveafox.org/" target="_blank" rel="noopener"> <i class="fas fa-paw logo"></i></a>
+        <h1>Where Is The Fox?</h1>
+        <a href="https://www.saveafox.org/" target="_blank" rel="noopener"> <i class="fas fa-paw logo"></i></a>
 
-    <!--Game Photo-->
+    </header>
 
-        <div id="rooms-images">
-        
-            <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
-            <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
-            <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
-            <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
-            <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
-            <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
-            <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
-            <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
+    <main> 
+    <!--Photo zone-->
+    <section id="rooms-images">
+        <img src="assets/images/fox2.jpg" alt="The big fox" class="photo" id="main_fox">        
+        <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
+        <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
+        <img src="assets/images/kitchen.jpg" alt="Kitchen" class="photo" id="kitchen">
+        <img src="assets/images/sitingroom.jpg" alt="Sitingroom" class="photo" id="sitingroom">
+        <img src="assets/images/bedroom.jpg" alt="Bedroom" class="photo" id="bedroom">
+        <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
+        <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
+        <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
+    </section>
 
-        </div>
+    <!--Text area-->
+    <section id = "text">
+            <textarea disabled id = "text_area" rows="11">Some question</textarea>
+            <div id="quiz">
+                <p id ="questions"></p>
+                <button type="submit" id="yes_button">Yes</button>
+                <button type="submit" id="no_button">No</button>
+            </div>
+    </section>
 
-        <div id="paragraph">
-            <p id="questions">Some question</p>
-        </div>
-    
+    <button type="submit" id="start">Play</button>    
+
     <!--Selection buttons-->
-
-    <div id="question-area">
+    <section id="question-area">
         <button data-type="button"  class="door door-blue" id="blueanswer">
-            <i class="fas fa-map-marker-alt" id="blue"></i>
-            
+            <i class="fas fa-map-marker-alt" id="blue"></i>            
         </button>
         <button data-type="button"  class="door door-red" id="redanswer">
             <i class="fas fa-map-marker-alt" id="red"></i>
@@ -70,12 +76,15 @@
         </button>
         <button data-type="button" class="door door-green" id="greenanswer">
             <i class="fas fa-map-marker-alt" id="green"></i>
-        </button>    
-    </div>
+        </button>
+    </section>
+   </main>          
 
     <button type="submit" id="finish">Play again</button>
-    
-<script src="assets/js/script.js"></script>    
+    <button type="submit" id="stop"><i class="fas fa-volume-mute"></i></button>
+
+<script src="assets/js/script.js"></script> 
+
 </body>
 
 </html>
