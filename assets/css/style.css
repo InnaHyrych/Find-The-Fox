@@ -39,24 +39,46 @@ img {
     margin-right: auto;      
 }
 
+/*Quiz question and story-text*/
 
+#text {
+    margin: 3% auto 1% auto
+}
 
-#questions {
-    font-size: 1.5rem; 
-    font-family: Roboto, sans-serif;  
+#text_area {
+    font-size: 1rem; 
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    width: 100%;
+    border: none;
+    overflow: auto;
+    outline-style: none;
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+    resize: none; 
+    background-color: inherit;
+}
+
+#quiz {
+    display: none;
 }
 
 /*style for buttons*/
 
+#question-area {
+    display: none;
+}
+
 #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #blueanswer, #redanswer, #yellowanswer, #greenanswer {
     padding: 4%;    
-    margin: 1.5%; 
+    margin: 0.5% 1.5% 0.5% 1.5%; 
     border-color: #B8390E;
     border-radius: 50%;  
+    background-color: white;
 }
 
 #blueanswer > i:hover, #redanswer > i:hover, #yellowanswer > i:hover, #greenanswer > i:hover  {    
