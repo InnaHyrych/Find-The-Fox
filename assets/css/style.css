@@ -103,7 +103,7 @@ img {
 
 /*Button that appears when game is finish*/
 
-#finish {
+#finish, #start {
     display: none;
     color:#3B0918;
     margin: 5%;
@@ -113,11 +113,24 @@ img {
     border-bottom: 3px solid #B8390E;
     border-right: 3px solid #B8390E;
     border-radius: 0 10% 10% 10%;
-    background: #f8beab;    
+    background: #f8beab;   
 }
 
 #finish:hover {
     transform: scale(1.2);
+}
+
+#stop {
+    display: none;
+    color:#3B0918;
+    margin: 5% 1% 2% 25%;
+    float: right;
+    position: relative;
+    border-color: #f36c3f;
+    border-bottom: 3px solid #B8390E;
+    border-right: 3px solid #B8390E;
+    border-radius: 0 10% 10% 10%;
+    background: #f8beab;
 }
 
 /* Media queries -- For screen sizes 768px - 1200px width */
