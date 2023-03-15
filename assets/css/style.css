@@ -135,59 +135,90 @@ img {
 
 /* Media queries -- For screen sizes 768px - 1200px width */
 
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 600px) {
 
     #rooms-images {
         width: 50%;
         margin: auto 25%;
-    }  
-
+    } 
+    
+    #text_area {
+    
+        width: 60%;
+    }
+    
     #questions {
         width: 50%;
         margin: 3% 25%;
     }
-
+    
     #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
-
+    
     #blueanswer, #redanswer, #yellowanswer, #greenanswer {
         margin: 1%;
-        padding: 3%;
+        background-color: white;
+        padding: 2%;
     }
+    
     #finish {
         width: 5rem;
         height: 2rem;
-        margin-right: 25%;
+        margin: 1% 25% auto 2%;
     }
-}
-
-/* Media queries -- For screen sizes bigger than 1200px width */
-
-@media screen and (min-width: 1200px) {
+    
+    #start {
+        margin: auto 25%
+    }
+    
+    #stop {
+        margin: 1.5% 1% 2% 25%;    
+    }
+    }
+    
+    /* Media queries -- For screen sizes bigger than 1200px width */
+    
+    @media screen and (min-width: 1200px) {
     
     #rooms-images {
         width: 40%;
         margin: auto 30%;
     }  
-
+    
+    #text_area {
+        width: 60%;
+    }
+    
     #questions {
         width: 40%;
         margin: 2% 30%;
     }
-
+    
     #blueanswer > i, #redanswer > i, #yellowanswer > i, #greenanswer > i {
         font-size: 2rem;
     }
-
+    
     #blueanswer, #redanswer, #yellowanswer, #greenanswer {
-        margin: 1%;
-        padding: 2%;
+        margin: 0% 0.5%;
+        padding: 1%;
     }
     
     #finish {
-    width: 10rem;
-    height: 3rem;
-    margin-right: 30%;          
+        width: 5rem;
+        height: 3rem;
+        margin: 1% 25% auto 1%;
+        float: right;
+    }         
+    
+    #stop {
+        margin: 2% 1% 2% 25%;
+        float: right;    
     }
-} 
+    
+    #start {
+        margin: auto 25%;
+        font-size: large;
+        padding: 0.5%;
+    }
+    }
