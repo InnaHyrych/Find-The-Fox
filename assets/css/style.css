@@ -1,26 +1,27 @@
 /*Main style*/
 
 body {
-        background-color: white;
-        font-family: "Arvo", sans-serif;
-        color: #3B0918;
-        text-align: center;
-    }
+    background-color: white;
+    font-family: "Arvo", sans-serif;    
+    color: #3B0918;
+    text-align: center;
+}
 
-/* Media queries -- For small screen sizes 320px - 480px width */    
+/* Media queries -- For small screen sizes 320px - 480px width */   
 
 /*Header*/    
 
 h1 {
     font-size: 200%;
     color: #1A2F5E;
+    margin-bottom: 2%;
 }
 
 /*Logo in header*/
 
 .logo {
     color: #B8390E;
-    font-size: 300%;
+    font-size: 250%;
     margin-bottom: 2%;
 }
 
@@ -28,12 +29,17 @@ h1 {
     transform: scale(1.2);
 }
 
-/*Gaming zone*/
+/*Photo zone*/
 
- img {
-    width: 100%;
-    display: none;        
+img {
+    width: 60%;
+    height: 50%;
+    display: none;
+    margin-left: auto;  
+    margin-right: auto;      
 }
+
+
 
 #questions {
     font-size: 1.5rem; 
