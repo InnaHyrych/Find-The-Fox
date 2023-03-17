@@ -17,6 +17,24 @@ document.addEventListener("DOMContentLoaded",function() {
     startButton.style.display = 'block';
 });
 
+/*------------Create Array for images*/    
+let imagesArray = [];
+    imagesArray.push(document.getElementById('main_fox'));
+    imagesArray.push(document.getElementById('house'));
+    imagesArray.push(document.getElementById('space'));
+    imagesArray.push(document.getElementById('fox'));
+    imagesArray.push(document.getElementById('corridor'));
+    imagesArray.push(document.getElementById('kitchen'));
+    imagesArray.push(document.getElementById('sitingroom'));
+    imagesArray.push(document.getElementById('bedroom'));
+    imagesArray.push(document.getElementById('diningroom'));
+    
+/*-------------Aray with changing images*/
+let imgList = imagesArray.slice(4);
+
+
+
+
 /*----------Create Array for buttons*/
 
 var buttonRed = document.getElementById('redanswer');
@@ -27,18 +45,7 @@ var buttonArray = [];
 
     buttonArray.push(buttonRed);
     buttonArray.push(buttonYellow);
-    buttonArray.push(buttonGreen);           
-        
-/*------------Create Array for images*/    
-var imagesArray = [];
-    imagesArray.push(document.getElementById('house'));
-    imagesArray.push(document.getElementById('corridor'));
-    imagesArray.push(document.getElementById('kitchen'));
-    imagesArray.push(document.getElementById('sitingroom'));
-    imagesArray.push(document.getElementById('bedroom'));
-    imagesArray.push(document.getElementById('diningroom'));
-    imagesArray.push(document.getElementById('space'));
-    imagesArray.push(document.getElementById('fox'));
+    buttonArray.push(buttonGreen);
                  
 /**
 * Removes the previous image after user pressed the button
