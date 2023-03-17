@@ -68,6 +68,24 @@ function yesNoButtons(choise1, choise2){
     }
 }
 
+/**
+ * The eventListener for "Start" button
+ * After pushing the game will start
+ */
+startButton.addEventListener('click', function () {
+    document.getElementById ('question-area').style.display = 'block';
+    startButton.style.display = 'none';
+    clearScreen();
+    document.getElementById('house').style.display = 'block';
+    let message0 = `Let's get started!
+    Red foxes live around the world in many diverse habitats including forests,
+    grasslands, mountains, and deserts.
+    They also adapt well to human environments such as farms,
+    suburban areas, and even large communities.
+    The red fox's resourcefulness has earned it a legendary reputation for intelligence and cunning.`;
+    questionsText.textContent = message0;
+});
+
 
 /*----------Create Array for buttons*/
 
