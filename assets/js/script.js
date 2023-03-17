@@ -145,6 +145,7 @@ finishButton.addEventListener('click', function () {
 });
 
 const blueDoor = document.getElementById("blueanswer");
+const stopSound = document.getElementById('stop');
 
 /**
 * When user push on the blue door, he always will see image with Spase
@@ -157,16 +158,14 @@ blueDoor.addEventListener("click", function () {
     questionsText.textContent = message1;
         
     //Add sound after pushed blue button    
-        let audio = new Audio();
-        audio.src = ("assets/sound/wrong-place.mp3");
-        audio.play();
-        let stopSound = document.getElementById('stop');
-        stopSound.style.display = "block";
+    let audio = new Audio();
+    audio.src = ("assets/sound/wrong-place.mp3");        
+    audio.play();   
+    stopSound.style.display = "block";
 
-        stopSound.addEventListener("click",function () {
-            audio.pause();
-            document.getElementById('stop').style.display = "block";
-        });                
+    stopSound.addEventListener("click",function () {
+        audio.pause();        
+    });                
     
     blueDoor.style.display = 'none';
     buttonRed.style.display = 'none';
@@ -193,11 +192,11 @@ function inFox() {
     //Add sound after user finded fox
     let audio = new Audio();
     audio.src = ("assets/sound/success.mp3");
-    audio.play();
+    audio.play();   
+    stopSound.style.display = "block";
 
     stopSound.addEventListener("click",function () {
-        audio.pause();
-        document.getElementById('stop').style.display = "block";
+        audio.pause();        
     });
 
     /**
