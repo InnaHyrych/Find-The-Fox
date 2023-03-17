@@ -41,7 +41,7 @@ function clearScreen() {
     }
 }
 
-let questions1 = ["Do you want to know more about how to save foxes?" /*Here can be more question*/];
+let questions1 = ["Do you want to know more about how to save foxes?" /*Here can be more questions*/];
 
 /**
  * Displaying a question from a list
@@ -49,6 +49,23 @@ let questions1 = ["Do you want to know more about how to save foxes?" /*Here can
 function question(questions) {
     document.getElementById ('quiz').style.display = 'block';
     document.getElementById ('questions').textContent = questions;    
+}
+
+let yesButton = document.getElementById('yes_button');
+let noButton = document.getElementById('no_button');
+
+/**
+ * Function responsible for user selection buttons" Yes, No"
+ */
+function yesNoButtons(choise1, choise2){
+    if (questions1[0]){
+        choise1.addEventListener('click', function() {
+            yesButton.innerHTML = '<a href="https://www.saveafox.org/" target="_blank">Yes</a>';
+        });
+        choise2.addEventListener('click', function() {
+            alert("You learned so much today!!! Let's play again!");
+        });
+    }
 }
 
 
