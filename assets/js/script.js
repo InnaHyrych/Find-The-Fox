@@ -32,7 +32,24 @@ let imagesArray = [];
 /*-------------Aray with changing images*/
 let imgList = imagesArray.slice(4);
 
+/**
+* Removes the previous image after user pressed the button
+*/
+function clearScreen() {
+    for (let image of imagesArray) {
+        image.style.display = 'none';
+    }
+}
 
+let questions1 = ["Do you want to know more about how to save foxes?" /*Here can be more question*/];
+
+/**
+ * Displaying a question from a list
+ */
+function question(questions) {
+    document.getElementById ('quiz').style.display = 'block';
+    document.getElementById ('questions').textContent = questions;    
+}
 
 
 /*----------Create Array for buttons*/
@@ -47,15 +64,6 @@ var buttonArray = [];
     buttonArray.push(buttonYellow);
     buttonArray.push(buttonGreen);
                  
-/**
-* Removes the previous image after user pressed the button
-*/
-function clearScreen() {
-    for (let Images of imagesArray) {           
-        Images.style.display = 'none';
-    }
-}   
-
 let blueDoor = document.getElementById("blueanswer");
 
 //function sound () {
