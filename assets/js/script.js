@@ -216,13 +216,18 @@ function inFox() {
 /**
  * Calls a random function from the "functionsArray" list, 
  * when the button was click
- */   
-for (var button of buttonArray) {
-    button.addEventListener('click', function() {       
-        let img = functionsArray[Math.floor(Math.random() * functionsArray.length)];
-        img();
-        functionsArray.splice(functionsArray[img], 1);
-        console.log(functionsArray);
-    });
-}          
+ */ 
+function main() {
+    for (let button of buttonArray) {
+         button.addEventListener('click', function() {
+            let rI = imgList[Math.floor(Math.random() * imgList.length)];
+            let rM = messageArray[Math.floor(Math.random() * messageArray.length)];
+            inRoom(rI, rM);
+            if (imgList.length === 0) {
+            inFox();
+            }
+        });
+    }
+}
+main();
     
