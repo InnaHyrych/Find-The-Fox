@@ -1,9 +1,21 @@
-var questionsText = document.getElementById('questions');
-function download() {
-    document.getElementById('house').style.display = 'block';
-    questionsText.textContent = "Hey! Welcome to our little house)) The Fox hid somewhere in it. Can you find her? ... P.S. Don't go through the blue door!";
-}
-document.addEventListener("DOMContentLoaded", download); 
+const questionsText = document.getElementById('text_area');
+let startButton = document.getElementById('start');
+/**
+ *Program download event that displays a photo, game rules and a start button on the screen. 
+ */
+document.addEventListener("DOMContentLoaded",function() {
+    document.getElementById('main_fox').style.display = 'block';
+    questionsText.textContent = `Hey! Welcome to our game "Find the Fox"!
+    This game is made to tell about foxe's live and habits 
+    and support Fox Rescue Projects. If you want to know more, just follow the link by clicking the "paw" on the top.
+    The rules are so easy:
+     * learn about foxes live;
+     * push the random button;
+     * relax...
+     * and find the fox!
+    Remember! Don't push the blue button!`;
+    startButton.style.display = 'block';
+});
 
 /*----------Create Array for buttons*/
 
