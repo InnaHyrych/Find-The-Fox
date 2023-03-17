@@ -86,18 +86,40 @@ startButton.addEventListener('click', function () {
     questionsText.textContent = message0;
 });
 
+/*----------Round coloring buttons and array for them*/ 
+const buttonRed = document.getElementById('redanswer');
+const buttonYellow = document.getElementById('yellowanswer');
+const buttonGreen = document.getElementById('greenanswer');
 
-/*----------Create Array for buttons*/
-
-var buttonRed = document.getElementById('redanswer');
-var buttonYellow = document.getElementById('yellowanswer');
-var buttonGreen = document.getElementById('greenanswer');
-    
-var buttonArray = [];
-
+let buttonArray = [];
     buttonArray.push(buttonRed);
     buttonArray.push(buttonYellow);
-    buttonArray.push(buttonGreen);
+    buttonArray.push(buttonGreen); 
+
+/*----------------Array for text-area messages*/
+let messageArray = [
+    `Foxes seem to be good at avoiding hard work - especially when there's someone else to do it for them. 
+    Instead of bothering to dig their own den, they sometimes steal a badger's burrow (called a sett) by scaring the owner away 
+    and making his house smell so bad he doesn't want it back.`,
+
+    `Foxes are omnivores. 
+    This means that they eat meat and vegetation. 
+    A fox's diet can consist of small animals, such as lizards, voles, rats, mice, rabbits and hares. 
+    They round out their diet with birds, fruits and bugs.`,
+
+    `Foxes typically live in the forest and make their den by digging holes and making burrows for themselves.
+    These will allow the fox to attain a cool area to sleep in. 
+    Foxes also use their dens to store food to save for later and keep their pups safe from other animals.`,
+
+    `Foxes seem to be very playful. 
+    They can often be seen playing with a fallen apple as though it were a ball, or chasing their own tails. 
+    This fooling around sometimes serves a second purpose: if a curious rabbit comes closer to watch, 
+    it will find itself gobbled up by the hungry fox.`,
+    
+    `Scientists believe that foxes may have had relationships with humans before dogs did. 
+    There are 16,500 year old remains of a man and his pet fox in Jordan, 
+    which is 4000 years older than any dog and human remains we have found that have been buried together.`
+];
                  
 let blueDoor = document.getElementById("blueanswer");
 
