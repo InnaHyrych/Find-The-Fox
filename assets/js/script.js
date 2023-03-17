@@ -120,6 +120,19 @@ let messageArray = [
     There are 16,500 year old remains of a man and his pet fox in Jordan, 
     which is 4000 years older than any dog and human remains we have found that have been buried together.`
 ];
+
+/**
+ * Removes previous image,
+ * makes image visible when user push on the random button,
+ * displey text under the image
+ */
+function inRoom (roomImage, roomMessage) {
+    clearScreen();
+    roomImage.style.display = 'block';
+    questionsText.textContent = roomMessage;
+    imgList.splice(imgList[roomImage], 1);
+    messageArray.splice(messageArray[roomMessage], 1);    
+}
                  
 let blueDoor = document.getElementById("blueanswer");
 
