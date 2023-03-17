@@ -175,7 +175,6 @@ blueDoor.addEventListener("click", function () {
     finishButton.style.display = 'block';    
 });
                  
-
 /**
  * Removes previous image,
  * makes image "fox.jpg" visible When user push on the random button,
@@ -184,24 +183,35 @@ blueDoor.addEventListener("click", function () {
  */
 function inFox() {
     clearScreen();
-    document.getElementById('fox').style.display = 'block';           
-    questionsText.innerHTML = `'Congratulation! You have found the Fox!  
-    Foxes are beautiful animals, with their delicate faces and bushy tails, but don't just love them for their good looks. 
-    The fox species are intriguing animals, known for their intelligence, playfulness, and lithe athleticism.  
-    And you can help to save them! Push <a href="https://www.saveafox.org" target="_blanc">here</a> and learn how!`;        
-    document.getElementById('finish').style.display = "block";//Display button "Play Again"
+    document.getElementById('fox').style.display = 'block';
+    questionsText.innerText = `Congratulation! You have found the Fox!
+    Foxes are beautiful animals, with their delicate faces and bushy tails, but don't just love them for their good looks.
+    The fox species are intriguing animals, known for their intelligence, playfulness, and lithe athleticism.
+    And you can help to save them!`;
+    finishButton.style.display = "block";//Display button "Play Again"
+
     //Add sound after user finded fox
     let audio = new Audio();
     audio.src = ("assets/sound/success.mp3");
     audio.play();
+
+    stopSound.addEventListener("click",function () {
+        audio.pause();
+        document.getElementById('stop').style.display = "block";
+    });
+
     /**
      * Block all buttons ecsept "Play Again"
      */
-    document.getElementById ('blueanswer').disabled = true;
-    document.getElementById ('redanswer').disabled = true;
-    document.getElementById ('yellowanswer').disabled = true;
-    document.getElementById ('greenanswer').disabled = true;
-}; 
+    
+    blueDoor.style.display = 'none';    
+    buttonRed.style.display = 'none';
+    buttonYellow.style.display = 'none';
+    buttonGreen.style.display = 'none';
+
+    question(questions1[0]);
+    yesNoButtons(yesButton, noButton);
+}
 
 /**
  * Calls a random function from the "functionsArray" list, 
