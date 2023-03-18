@@ -41,7 +41,7 @@ function clearScreen() {
     }
 }
 
-let questions1 = ["Do you want to know more about how to save foxes?" /*Here can be more questions*/];
+let questions1 = ["Do you want to know more about how to save foxes?" /*Here can be more question's*/];
 
 /**
  * Displaying a question from a list
@@ -153,10 +153,10 @@ function stopSound(){
     let stopSound = document.getElementById('stop');
     stopSound.style.display = "block";
     stopSound.addEventListener("click",function () {
-        audio.pause();        
+    let audio;
+    audio.pause();
     });
 }
-
 
 /**
 * When user push on the blue door, he always will see image with Spase
@@ -201,13 +201,9 @@ function inFox() {
     let audio = new Audio();
     audio.src = ("assets/sound/success.mp3");
     audio.play();
-    stopSound();    
-    };
+    stopSound();
 
-    /**
-     * Block all buttons ecsept "Play Again"
-     */
-    
+    /*Block all buttons ecsept "Play Again"*/    
     blueDoor.style.display = 'none';    
     buttonRed.style.display = 'none';
     buttonYellow.style.display = 'none';
