@@ -149,11 +149,10 @@ const blueDoor = document.getElementById("blueanswer");
 /**
  * Mute sound.
  */
-function stopSound(){
+function stopSound(audio){
     let stopSound = document.getElementById('stop');
     stopSound.style.display = "block";
     stopSound.addEventListener("click",function () {
-    let audio;
     audio.pause();
     });
 }
@@ -169,11 +168,11 @@ blueDoor.addEventListener("click", function () {
     questionsText.textContent = message1;
         
     //Add sound after pushed blue button    
-    let audio = new Audio();
-    audio.src = ("assets/sound/wrong-place.mp3");        
-    audio.play();
+    let audio1 = new Audio();
+    audio1.src = ("assets/sound/wrong-place.mp3");        
+    audio1.play();
     
-    stopSound();
+    stopSound(audio1);
     
     blueDoor.style.display = 'none';
     buttonRed.style.display = 'none';
@@ -198,10 +197,10 @@ function inFox() {
     finishButton.style.display = "block";//Display button "Play Again"
 
     //Add sound after user finded fox
-    let audio = new Audio();
-    audio.src = ("assets/sound/success.mp3");
-    audio.play();
-    stopSound();
+    let audio2 = new Audio();
+    audio2.src = ("assets/sound/success.mp3");
+    audio2.play();
+    stopSound(audio2);
 
     /*Block all buttons ecsept "Play Again"*/    
     blueDoor.style.display = 'none';    
