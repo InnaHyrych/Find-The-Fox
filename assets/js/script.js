@@ -145,7 +145,18 @@ finishButton.addEventListener('click', function () {
 });
 
 const blueDoor = document.getElementById("blueanswer");
-const stopSound = document.getElementById('stop');
+
+/**
+ * Mute sound.
+ */
+function stopSound(){
+    let stopSound = document.getElementById('stop');
+    stopSound.style.display = "block";
+    stopSound.addEventListener("click",function () {
+        audio.pause();        
+    });
+}
+
 
 /**
 * When user push on the blue door, he always will see image with Spase
@@ -160,12 +171,9 @@ blueDoor.addEventListener("click", function () {
     //Add sound after pushed blue button    
     let audio = new Audio();
     audio.src = ("assets/sound/wrong-place.mp3");        
-    audio.play();   
-    stopSound.style.display = "block";
-
-    stopSound.addEventListener("click",function () {
-        audio.pause();        
-    });                
+    audio.play();
+    
+    stopSound();
     
     blueDoor.style.display = 'none';
     buttonRed.style.display = 'none';
@@ -192,12 +200,9 @@ function inFox() {
     //Add sound after user finded fox
     let audio = new Audio();
     audio.src = ("assets/sound/success.mp3");
-    audio.play();   
-    stopSound.style.display = "block";
-
-    stopSound.addEventListener("click",function () {
-        audio.pause();        
-    });
+    audio.play();
+    stopSound();    
+    };
 
     /**
      * Block all buttons ecsept "Play Again"
