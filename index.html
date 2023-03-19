@@ -39,7 +39,7 @@
 
     <main> 
     <!--Photo zone-->
-    <section id="rooms-images">
+    <div id="rooms-images">
         <img src="assets/images/fox2.jpg" alt="The big fox" class="photo" id="main_fox">        
         <img src="assets/images/house.jpg" alt="House" class="photo" id="house">
         <img src="assets/images/corridor.jpg" alt="Corridor" class="photo" id="corridor">
@@ -49,22 +49,22 @@
         <img src="assets/images/diningroom.jpg" alt="Diningroom" class="photo" id="diningroom">
         <img src="assets/images/astronaut.jpg" alt="Space" class="photo" id="space">
         <img src="assets/images/fox.jpg" alt="Fox" class="photo" id="fox">
-    </section>
+    </div>
 
     <!--Text area-->
-    <section id = "text">
+    <div id = "text">
             <textarea disabled id = "text_area" rows="11">Some question</textarea>
             <div id="quiz">
                 <p id ="questions"></p>
                 <button type="submit" id="yes_button">Yes</button>
                 <button type="submit" id="no_button">No</button>
             </div>
-    </section>
-
+        </div>
+    <!--Button for game start-->
     <button type="submit" id="start">Play</button>    
 
     <!--Selection buttons-->
-    <section id="question-area">
+    <div id="question-area">
         <button data-type="button"  class="door door-blue" id="blueanswer">
             <i class="fas fa-map-marker-alt" id="blue"></i>            
         </button>
@@ -77,9 +77,9 @@
         <button data-type="button" class="door door-green" id="greenanswer">
             <i class="fas fa-map-marker-alt" id="green"></i>
         </button>
-    </section>
+    </div>
    </main>          
-
+    <!--Buttons for restart game, and mute sound-->
     <button type="submit" id="finish">Play again</button>
     <button type="submit" id="stop"><i class="fas fa-volume-mute"></i></button>
 
