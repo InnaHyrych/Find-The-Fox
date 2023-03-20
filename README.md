@@ -61,7 +61,7 @@ The colors used in the game emphasize the natural theme. I used [Shemecolor.com]
 The page consists of these sections for the user:
 1. ### The Header and logo. 
   * For the header I used the "Arvo" font, because it is quite elegant and clear enough for a quick read.
-  * Logo is nice paw, by clicking on which the user can go to the site and read more about how anybody can help the fox rescue organization.
+  * Logo is a nice paw, by clicking on which the user can go to the site and read more about how anybody can help the fox rescue organization.
 
 ![Header](assets/images/readme_img/5_header_logo.jpg)
 
