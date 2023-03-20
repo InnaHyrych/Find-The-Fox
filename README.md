@@ -48,7 +48,7 @@ The game is created in a simple style, where the main attention is drawn to the 
 
 ![Icons](assets/images/readme_img/3_icons.jpg)
 
-Icons were taken from the Fontaweysom Icon Library and utilised as classes in the <i> tag into the interactive buttons. They can easily be styled using other classes or IDs in the same tag.
+Icons were taken from the Fontaweysom Icon Library and utilised as classes in the "i" tag into the interactive buttons. They can easily be styled using other classes or IDs in the same tag.
 
 ### Colours
 
